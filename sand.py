@@ -1,9 +1,14 @@
+"""
+Cellular automaton simulation
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 
-def sand_animation():
+def sand_automaton():
+    """Main function of the automaton"""
     board_size = 100
     screen_board = np.zeros((board_size + 1, board_size + 1), dtype=int)
 
@@ -104,5 +109,6 @@ def show_grid(grid):
     plt.draw()
     plt.pause(0.01)
 
+
 # Executa a simulação
-sand_animation()
+sand_automaton()
